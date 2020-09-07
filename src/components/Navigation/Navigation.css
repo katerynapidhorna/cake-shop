@@ -1,0 +1,31 @@
+ul {
+  text-decoration: node;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+li {
+  border: 1px solid black;
+  position: relative;
+  padding: 1em;
+}
+
+.sub-navigation {
+  border: 1px solid black;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  padding-left: 0;
+}
+
+li:hover .sub-navigation {
+  display: block;
+}
