@@ -15,13 +15,13 @@ export default function Home() {
   return (
     <div>
       <h1>Home page</h1>
-      <div>
+      <div className="products-container">
         {products &&
           products.map((item) => {
             return (
               <div key={item.id}>
-                <h3>{item.name}</h3>
                 <img src={item.imgUrl} />
+                <h3>{item.name}</h3>
               </div>
             );
           })}
