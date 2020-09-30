@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import fetchAllProductsThunk from "../../store/products/actions";
 import selectProducts from "../../store/products/selectors";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -19,7 +20,9 @@ export default function Home() {
           products.map((item) => {
             return (
               <div key={item.id}>
-                <img src={item.imgUrl} />
+                <Link to={`/cupcakes/${item.id}`}>
+                  <img src={item.imgUrl} />
+                </Link>
                 <h3>{item.name}</h3>
               </div>
             );
