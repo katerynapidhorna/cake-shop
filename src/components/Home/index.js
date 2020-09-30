@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import fetchAllProductsThunk from "../store/products/actions";
-import selectProducts from "../store/products/selectors";
+import fetchAllProductsThunk from "../../store/products/actions";
+import selectProducts from "../../store/products/selectors";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -14,7 +14,6 @@ export default function Home() {
   console.log(products);
   return (
     <div>
-      <h1>Home page</h1>
       <div className="products-container">
         {products &&
           products.map((item) => {

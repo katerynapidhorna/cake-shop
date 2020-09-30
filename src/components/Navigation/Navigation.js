@@ -23,6 +23,15 @@ export default function Navigation() {
             </li>
           </ul>
         </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/About">About</Link>
+        </li>
+        <li>
+          <Link to="/Recipies">Recipies</Link>
+        </li>
       </ul>
     </div>
   );
