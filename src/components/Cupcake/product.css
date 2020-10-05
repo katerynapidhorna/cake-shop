@@ -1,0 +1,21 @@
+.product-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.size-input {
+  padding: 3rem;
+}
+.amount-input {
+  padding: 3rem;
+}
+lable {
+  font-size: larger;
+}
+button {
+  background-color: #ef8585;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 15px;
+  border-color: grey;
+}

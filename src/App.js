@@ -19,9 +19,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/About" component={About} />
+        <Route path="/cupcakes/:id" component={Cupcake} />
         <Route path="/categories" component={Categories} />
         <Route path="/cupcakes" component={Cupcakes} />
-        <Route path="/cupcakes/:id" component={Cupcake} />
       </Switch>
     </div>
   );
